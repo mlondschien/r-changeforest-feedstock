@@ -1,5 +1,5 @@
 {% set name = "r-changeforest" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -14,7 +14,7 @@ source:
   # and
   # https://github.com/mlondschien/changeforest/releases/download/{{ version }}/{{ version }}.tar.gz
   # don't work.
-  sha256: 036ab5c1ec8dcfadfe9eee5fddd4c8fbd3b2c7a622fa570f2bbcba776404de6e
+  sha256: c3461945b4bcd9c1efc5e6061df0949c7d918950625a570b3521dc70a2532b36
 
 build:
   merge_build_host: true  # [win]
@@ -57,7 +57,7 @@ about:
   home: https://github.com/mlondschien/changeforest
   license: BSD-3-Clause
   license_file: LICENSE
-  summary: 'Classifier based non-parametric change point detection'
+  summary: Classifier based non-parametric change point detection
   description: |
     Change point detection tries to identify times when the probability distribution of a
     stochastic process or time series changes. Existing methods either assume a parametric
