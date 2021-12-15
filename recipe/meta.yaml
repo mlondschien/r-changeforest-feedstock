@@ -1,5 +1,5 @@
 {% set name = "r-changeforest" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -14,7 +14,7 @@ source:
   # and
   # https://github.com/mlondschien/changeforest/releases/download/{{ version }}/{{ version }}.tar.gz
   # don't work.
-  sha256: 732fc89fb3e4d1248d3639dea7f11d6f29ed9938d5eb805d1f28528a08a32541
+  sha256: c2ae401d13a411c7db6385e04b1da8b5ba6eb93f438534e0159c787e1ef67b2a
 
 build:
   merge_build_host: true  # [win]
