@@ -27,6 +27,8 @@ build:
 # Taken from https://github.com/conda-forge/r-gifski-feedstock
 requirements:
   build:
+    - cross-r-base {{ r_base }}  # [build_platform != target_platform]
+    - r-r6                       # [build_platform != target_platform]
     - rust
     - {{ compiler('c') }}
     - {{ compiler('m2w64_c') }}    # [win]
