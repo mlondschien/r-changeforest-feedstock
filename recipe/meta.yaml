@@ -14,7 +14,7 @@ source:
   # and
   # https://github.com/mlondschien/changeforest/releases/download/{{ version }}/{{ version }}.tar.gz
   # don't work.
-  sha256: bf9dd2d809ad3ba230bc8af4c52607605ed61a4541bd432544cbbec61ec48e32
+  sha256: a27460bbb7e0fe5ce6f5a25bf12519e15ac0c75689b4f0fdc144dcfd7af64ed3
 
 build:
   merge_build_host: true  # [win]
