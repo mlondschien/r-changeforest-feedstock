@@ -11,16 +11,20 @@ Summary: Classifier based non-parametric change point detection
 
 Development: https://github.com/mlondschien/changeforest
 
-Change point detection tries to identify times when the probability distribution of a
-stochastic process or time series changes. Existing methods either assume a parametric
-model for within-segment distributions or a based on ranks or distances, and thus fail
-in scenarios with reasonably large dimensionality.
-`changeforest` implements a classifier based algorithm that consistently estimates
-change points without any parametric assumptions even in high-dimensional scenarios.
+Change point detection aims to identify structural breaks in the probability
+distribution of a time series. Existing methods either assume a parametric model for
+within-segment distributions or are based on ranks or distances and thus fail in
+scenarios with a reasonably large dimensionality.
+
+`changeforest` implements a classifier-based algorithm that consistently estimates
+change points without any parametric assumptions, even in high-dimensional scenarios.
+It uses the out-of-bag probability predictions of a random forest to construct a
+classifier log-likelihood ratio that gets optimized using a computationally feasible two-step
+method.
+
 See [1] for details.
 
-[1] M. Londschien, S. Kovács and P. Bühlmann (2021), "Random Forests and other
-nonparametric classifiers for multivariate change point detection", working paper.
+[1] M. Londschien, P. Bühlmann, and S. Kovács (2023). "Random Forests for Change Point Detection" Journal of Machine Learning Research
 
 
 Current build status
@@ -41,13 +45,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_r_base4.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14679&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-changeforest-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_r_base4.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14679&branchName=main">
@@ -55,10 +52,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_r_base4.1</td>
+              <td>linux_64_r_base4.3</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14679&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-changeforest-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-changeforest-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -69,10 +66,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_r_base4.1</td>
+              <td>osx_64_r_base4.3</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14679&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-changeforest-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_r_base4.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-changeforest-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -80,6 +77,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14679&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-changeforest-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_r_base4.2" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_r_base4.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14679&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-changeforest-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr>
