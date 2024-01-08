@@ -1,7 +1,7 @@
 export DISABLE_AUTOBREW=1
 
 # https://github.com/conda-forge/r-changeforest-feedstock/issues/28
-if [[ $target_platform == osx-64 ]]; then
+if [[ $target_platform == osx-arm64 ]]; then
   export TARGET="aarch64-apple-darwin"
 fi
 
